@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 
-server.listen(3000, "127.0.0.1");
+server.listen(3000);
 
 app.get('/', function(requset, respons) {
   respons.sendFile(__dirname + '/index.html');
